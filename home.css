@@ -1,0 +1,238 @@
+:root
+{
+  --blue:#70C7F1
+}
+
+body {
+  font-family: 'Uncial Antiqua';
+  color: white;
+  background: url(../image/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
+
+.main_view {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.jellyfish_1 {
+  height: 20vh;
+  margin-top: 15vh;
+  margin-left: 10vw;
+  transition: transform 0.3s;
+}
+
+.right_top
+{
+  display: relative;
+}
+.music
+{
+  border: solid;
+  display: absolute;
+  height: 10vh;
+  width: 4vw;
+  margin-top: 1vh;
+  margin-left: 37vw;
+}
+
+.music_button
+{
+  border: solid;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  height: 4vh;
+  width: 4vh; 
+  
+}
+
+.music_button:hover
+{
+  cursor: pointer;
+}
+
+.jellyfish_2 {
+  height: 190px;
+  margin-top: 20px;
+  margin-left: 100px;
+  transition: transform 0.3s;
+}
+
+.float-once{
+  animation: floatOnce 6s ease;
+}
+
+
+@keyframes floatOnce {
+  0% {
+    transform: translateY(0);
+  }
+  
+  40% {
+    transform: translateY(-50vh); 
+  }
+  
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+
+
+.title
+{
+  margin-top: 20px;
+  position: relative;
+}
+
+.play_button button
+{
+  font-family: "Original Surfer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: none;
+  position: absolute;
+  color: white; 
+  border-radius: 80px;
+  border: 8px solid white;           
+  font-size: 20px;   
+  top: 266px;
+  left: 57px;
+  height: 50px;
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.play_button button:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+
+.yzu_logo
+{
+  height: 400px;
+  margin-right: 150px;
+  margin-top: 60px;
+}
+
+/* the part at the bottom */
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.coral1 {
+  margin-top: -100px;
+  height: 500px;
+  margin-left: -120px;
+}
+
+.coral2 {
+  margin-top: 1vh;
+  height: 500px;
+  margin-right: 10vh;
+}
+
+
+
+/*Bubbles animation*/
+
+.bubbles img {
+  width: 10vh;
+  animation: bubble 15s linear infinite;
+}
+
+.bubbles img:hover{
+  animation: none;
+  filter: blur(150px);
+}
+
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -50px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-98vh);
+    opacity: 0;
+  }
+
+}
+
+
+
+.bubbles img:nth-child(1) {
+  animation-delay: 0.5s;
+  width: 30px;
+}
+
+.bubbles img:nth-child(2) {
+  width: 28px;
+}
+
+.bubbles img:nth-child(3) {
+  animation-delay: 8s;
+  width: 36px;
+}
+
+.bubbles img:nth-child(4) {
+  animation-delay: 8.2s;
+  width: 27px;
+}
+
+.bubbles img:nth-child(5) {
+  animation-delay: 2s;
+  width: 20px;
+}
+
+.bubbles img:nth-child(6) {
+  animation-delay: 4s;
+  width: 30px;
+}
+
+.bubbles img:nth-child(7) {
+  animation-delay: 5s;
+  width: 35px;
+}
+
+.bubbles img:nth-child(8) {
+  animation-delay: 1s;
+  width: 29px;
+}
+
+.bubbles img:nth-child(9) {
+  animation-delay: 7s;
+  width: 40px;
+}
