@@ -39,3 +39,6 @@ next.addEventListener("click", () => {
   index = (index + 1) % messages.length;
   text.textContent = messages[index];
 });
+
+
+
